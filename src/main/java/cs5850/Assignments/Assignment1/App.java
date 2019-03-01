@@ -12,7 +12,9 @@ public class App
 	        	 System.out.println("No Directory Path Provided!");
 	             System.exit(-1);
 	        }
-	        String directoryName=args[0]; 	        
+	        GoogleDriveFileOperation driveOp = new GoogleDriveFileOperation(GoogleDriveService.get().getgdClient());
+	        String directoryName=args[0]; 
 	        Path dir = Paths.get(directoryName); 
-	 }
+	        new WatchDirectoryService(dir, driveOp).processEvents();
+	    }
 }

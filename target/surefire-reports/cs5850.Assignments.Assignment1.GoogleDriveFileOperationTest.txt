@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 4, Errors: 2, Skipped: 0, Time elapsed: 0.494 s <<< FAILURE! - in cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest
+testaddFolder(cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest)  Time elapsed: 0.395 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Folder ID: testID]> but was:<[]>
+	at cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest.testaddFolder(GoogleDriveFileOperationTest.java:65)
+
+testModifyFileWithIOException(cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest)  Time elapsed: 0.023 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<java.io.IOException> but was<java.lang.NullPointerException>
+	at cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest.testModifyFileWithIOException(GoogleDriveFileOperationTest.java:226)
+
+testModifyFileWithNullId(cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected exception: java.lang.NullPointerException
+
+testDeleteFile(cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest)  Time elapsed: 0 s  <<< ERROR!
+org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+2. inside when() you don't call method on mock but on some other object.
+3. the parent of the mocked class is not public.
+   It is a limitation of the mock engine.
+
+	at cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest.testDeleteFile(GoogleDriveFileOperationTest.java:267)
+
+testGetFileIdIOException(cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest)  Time elapsed: 0.015 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[java.io.IOException]> but was:<[null]>
+	at cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest.testGetFileIdIOException(GoogleDriveFileOperationTest.java:153)
+
+testAddExistingFileIOException(cs5850.Assignments.Assignment1.GoogleDriveFileOperationTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Expected exception: java.io.IOException
+

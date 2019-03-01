@@ -1,0 +1,48 @@
+# Created at 2019-02-28T22:22:28.684
+[SUREFIRE] std/in stream corrupted
+java.io.IOException: Command NOOP unexpectedly read Void data with length 4.
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:130)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2019-02-28T22:24:58.006
+Unexpected IOException: 7,1,cs5850.Assignments.Assignment1.GoogleDriveFileOpIntegrtionTest,testIntegration(cs5850.Assignments.Assignment1.GoogleDriveFileOpIntegrtionTest),null,400 Bad Request\000D\000A{\000D\000A  "error" : "invalid_request"\002C\000D\000A  "error_description" : "Invalid parameter value for redirect_uri: Missing scheme: &lt;redirectPath&gt;"\000D\000A},null,400 Bad Request\000D\000A{\000D\000A  "error" : "invalid_request"\002C\000D\000A  "error_description" : "Invalid parameter value for redirect_uri: Missing scheme: &lt;redirectPath&gt;"\000D\000A},GoogleDriveFileOpIntegrtionTest.setUp:29->initialGoogleDriveServices:58 \00BB TokenResponse,com.google.api.client.auth.oauth2.TokenResponseException: \000A400 Bad Request\000D\000A{\000D\000A  "error" : "invalid_request"\002C\000D\000A  "error_description" : "Invalid parameter value for redirect_uri: Missing scheme: &lt;redirectPath&gt;"\000D\000A}\000A\0009at cs5850.Assignments.Assignment1.GoogleDriveFileOpIntegrtionTest.initialGoogleDriveServices(GoogleDriveFileOpIntegrtionTest.java:58)\000A\0009at cs5850.Assignments.Assignment1.GoogleDriveFileOpIntegrtionTest.setUp(GoogleDriveFileOpIntegrtionTest.java:29)\000A
+
+
+# Created at 2019-02-28T22:24:58.101
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,cs5850.Assignments.Assignment1.GoogleDriveFileOpIntegrtionTest,null,null,null
+
+
+# Created at 2019-02-28T22:24:58.138
+Unexpected IOException: 1,1,org.apache.maven.surefire.junit4.JUnit4Provider,cs5850.Assignments.Assignment1.WatchDirectoryServiceTest,null,null,null
+
+
+# Created at 2019-02-28T22:24:58.166
+Unexpected IOException: 5,1,cs5850.Assignments.Assignment1.WatchDirectoryServiceTest,testCreateEvents(cs5850.Assignments.Assignment1.WatchDirectoryServiceTest),null,null,null
+
+
+# Created at 2019-02-28T22:24:58.228
+Unexpected IOException: 7,1,cs5850.Assignments.Assignment1.WatchDirectoryServiceTest,testCreateEvents(cs5850.Assignments.Assignment1.WatchDirectoryServiceTest),null,D:\005CDirToWatch,null,D:\005CDirToWatch,WatchDirectoryServiceTest.testCreateEvents \00BB NoSuchFile D:\005CDirToWatch,java.nio.file.NoSuchFileException: D:\005CDirToWatch\000A
+
+
+# Created at 2019-02-28T22:24:58.229
+Unexpected IOException: 5,1,cs5850.Assignments.Assignment1.WatchDirectoryServiceTest,testUpdateEvents(cs5850.Assignments.Assignment1.WatchDirectoryServiceTest),null,null,null
+
+
+# Created at 2019-02-28T22:24:58.229
+Unexpected IOException: 7,1,cs5850.Assignments.Assignment1.WatchDirectoryServiceTest,testUpdateEvents(cs5850.Assignments.Assignment1.WatchDirectoryServiceTest),null,D:\005CDirToWatch,null,D:\005CDirToWatch,WatchDirectoryServiceTest.testUpdateEvents \00BB NoSuchFile D:\005CDirToWatch,java.nio.file.NoSuchFileException: D:\005CDirToWatch\000A
+
+
+# Created at 2019-02-28T22:24:58.246
+Unexpected IOException: 5,1,cs5850.Assignments.Assignment1.WatchDirectoryServiceTest,testDeleteEvents(cs5850.Assignments.Assignment1.WatchDirectoryServiceTest),null,null,null
+
+
+# Created at 2019-02-28T22:24:58.271
+Unexpected IOException: 7,1,cs5850.Assignments.Assignment1.WatchDirectoryServiceTest,testDeleteEvents(cs5850.Assignments.Assignment1.WatchDirectoryServiceTest),null,D:\005CDirToWatch,null,D:\005CDirToWatch,WatchDirectoryServiceTest.testDeleteEvents \00BB NoSuchFile D:\005CDirToWatch,java.nio.file.NoSuchFileException: D:\005CDirToWatch\000A
+
+
+# Created at 2019-02-28T22:24:58.276
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,cs5850.Assignments.Assignment1.WatchDirectoryServiceTest,null,null,null
+
+

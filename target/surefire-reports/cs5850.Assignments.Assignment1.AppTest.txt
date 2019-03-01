@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: cs5850.Assignments.Assignment1.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in cs5850.Assignments.Assignment1.AppTest
